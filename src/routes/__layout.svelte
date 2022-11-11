@@ -33,12 +33,6 @@
   :global(h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus) {
     color: var(--link-color-alt);
   }
-  figure {
-  border: 1px solid var(--primary-color);
-  display: inline-block;
-  padding: 0rem;
-  width: 100%;
-}
   /* Dark Mode Variables */
   @media (prefers-color-scheme: dark) {
     :root {
