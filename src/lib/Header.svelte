@@ -3,7 +3,7 @@
 </script>
 
 <script>
-  export let blogTitle = 'My Blog'
+  export let blogTitle = 'STYLEWRITING'
 
   let path
   $: ({pathname} = $page)
@@ -19,14 +19,17 @@
 </header>
 
 <style>
+  
   ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
   }
   a[data-selected='true'] {
     font-weight: 600;
     color: #555;
+
   }
   a {
     text-decoration: none;
@@ -40,6 +43,7 @@
     align-items: flex-start;
     padding: 1em;
   }
+
   @media screen and (min-width: 400px) {
     header {
       flex-direction: row-reverse;
