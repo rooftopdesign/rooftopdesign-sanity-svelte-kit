@@ -3,7 +3,7 @@
   import Footer from '$lib/Footer.svelte'
 </script>
 
-<Header blogTitle={'Rooftop Design Blog'} />
+<Header blogTitle={'STYLEWRITING'} />
 
 <main style="padding: 1em">
   <slot />
@@ -26,10 +26,21 @@
     --secondary-color: aliceblue;
     --tertiary-color: whitesmoke;
   }
+
+  @font-face{ 
+	font-family: 'n27regular';
+	src: url('n27regular.eot');
+	src: url('n27regular.eot?#iefix') format('embedded-opentype'),
+	     url('n27regular.woff') format('woff'),
+	     url('n27regular.ttf') format('truetype'),
+	     url('n27regular.svg#webfont') format('svg');
+}
+
   /* Linked Header Colors */
   :global(h1 a, h1 a:visited, h2 a, h2 a:visited, h3 a, h3 a:visited) {
     color: var(--text-color);
   }
+
   :global(h1 a:hover, h1 a:focus, h2 a:hover, h2 a:focus, h3 a:hover, h3 a:focus) {
     color: var(--link-color-alt);
   }
